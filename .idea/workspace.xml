@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61f2718-219f-4c03-ad57-5fb46f7b1fb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet-Php-Steam" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Projet-Php-Steam/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/ErrorCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connexion/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connexion/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projet_php_steam.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet-Php-Steam" beforeDir="false" afterPath="$PROJECT_DIR$/Projet-Php-Steam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connexion/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +80,7 @@
       <workItem from="1693389734464" duration="5077000" />
       <workItem from="1693589173678" duration="9334000" />
       <workItem from="1693749624358" duration="1617000" />
-      <workItem from="1693751322025" duration="3759000" />
+      <workItem from="1693751322025" duration="8547000" />
     </task>
     <servers />
   </component>
