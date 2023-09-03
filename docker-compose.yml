@@ -1,0 +1,10 @@
+version: '2'
+services:
+  webserver:
+    image: "ghcr.io/ld-web/php-apache:latest"
+    ports:
+      - "82:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal
