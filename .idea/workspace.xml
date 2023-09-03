@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61f2718-219f-4c03-ad57-5fb46f7b1fb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Projet-Php-Steam/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet-Php-Steam" beforeDir="false" afterPath="$PROJECT_DIR$/Projet-Php-Steam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet-Php-Steam" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/connexion/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connexion/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion/logout.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +83,24 @@
       <workItem from="1693389734464" duration="5077000" />
       <workItem from="1693589173678" duration="9334000" />
       <workItem from="1693749624358" duration="1617000" />
-      <workItem from="1693751322025" duration="8547000" />
+      <workItem from="1693751322025" duration="9918000" />
     </task>
+    <task id="LOCAL-00001" summary="avancer sur login et registration">
+      <option name="closed" value="true" />
+      <created>1693772617169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693772617169</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="avancer sur login et registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="avancer sur login et registration" />
   </component>
 </project>

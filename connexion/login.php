@@ -45,6 +45,11 @@ if (isset($_POST['connexion'])) {
         }
     }
 }
+
+// Connexion réussie
+$_SESSION['user_name'] = $UserName;
+header('Location: bienvenue.php');
+exit();
 ?>
 
 
