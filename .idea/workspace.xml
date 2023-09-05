@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61f2718-219f-4c03-ad57-5fb46f7b1fb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nav-bar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a61f2718-219f-4c03-ad57-5fb46f7b1fb7" name="Changes" comment="finalisation de login.php et registration.php. La parti registration.php est valide.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connexion/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +22,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "assignee": "Alexandre-Jln",
+      "author": "Alexandre-Jln"
+    }
+  ],
   "lastFilter": {
     "state": "OPEN",
-    "assignee": "Alexandre-Jln"
+    "assignee": "Alexandre-Jln",
+    "author": "Alexandre-Jln"
   }
 }]]></component>
   <component name="GithubPullRequestsUISettings">
@@ -103,7 +104,7 @@
       <workItem from="1693589173678" duration="9334000" />
       <workItem from="1693749624358" duration="1617000" />
       <workItem from="1693751322025" duration="9918000" />
-      <workItem from="1693816435607" duration="31776000" />
+      <workItem from="1693816435607" duration="33309000" />
     </task>
     <task id="LOCAL-00001" summary="avancer sur login et registration">
       <option name="closed" value="true" />
@@ -113,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693772617169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finalisation de login.php et registration.php. La parti registration.php est valide.">
+      <option name="closed" value="true" />
+      <created>1693918116897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693918116897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="avancer sur login et registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="avancer sur login et registration" />
+    <MESSAGE value="finalisation de login.php et registration.php. La parti registration.php est valide." />
+    <option name="LAST_COMMIT_MESSAGE" value="finalisation de login.php et registration.php. La parti registration.php est valide." />
   </component>
 </project>
