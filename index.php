@@ -1,5 +1,5 @@
 <?php
+require_once 'layout/header.php';
+?>
 
-require_once 'connexion/login.php';
-
-require_once 'registration.php';
+<?php require_once 'layout/footer.php';

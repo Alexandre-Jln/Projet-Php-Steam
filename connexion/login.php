@@ -1,67 +1,72 @@
 <?php
-require_once 'layout/header.php';
-require_once 'classes/ErrorCode.php';
-?>
+require_once('../nav-bar.php');
+require_once('../classes/ErrorCode.php');
 
-    <h2>Connexion</h2>
-
-<?php
 session_start();
 
-if (isset($_POST['connexion'])) {
-    if (empty($_POST['user_name']) || empty($_POST['password_hash'])) {
-        echo "Le champ Nom d'utilisateur ou Mot de passe est vide.";
+if (isset($_POST['user_name']) && isset($_POST['password'])) {
+    $username = $_POST['user_name'];
+    $password = $_POST['password'];
+
+    try {
+        $pdo = new PDO("mysql:host=host.docker.internal:3306;dbname=php_project_steam", "root", "");
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        echo "Erreur de connexion à la base de données : " . $e->getMessage();
+    }
+
+
+    // Connexion à la base de données
+    $pdo = new PDO("mysql:host=host.docker.internal:3306;dbname=php_project_steam", "root", "");
+
+    if (!$pdo) {
+        echo "Erreur de connexion à la base de données.";
     } else {
-        $UserName = $_POST['user_name'];
-        $Password = $_POST['password_hash'];
+        // Utilisation de requêtes préparées
+        $Requete = $pdo->prepare("SELECT * FROM users WHERE username=:username");
+        $Requete->bindValue(":username", $username);
+        $Requete->execute();
+        $result = $Requete->fetch(PDO::FETCH_ASSOC);
 
-        $mysqli = mysqli_connect("localhost", "root", "", "project-php-steam");
+        if ($result !== false) {
+            $hashedPassword = $result['password_hash'];
 
-        if (!$mysqli) {
-            echo "Erreur de connexion à la base de données.";
-        } else {
-            // Utilisation de requêtes préparées
-            $Requete = $mysqli->prepare("SELECT * FROM users WHERE username = ? LIMIT 1");
-            $Requete->bind_param("s", $UserName);
-            $Requete->execute();
-            $result = $Requete->get_result();
-
-            if ($result->num_rows == 1) {
-                $row = $result->fetch_assoc();
-                $hashedPassword = $row['passwordHash'];
-
-                // Utilisation de password_verify pour vérifier les mots de passe
-                if (password_verify($Password, $hashedPassword)) {
-                    $_SESSION['user_name'] = $UserName;
-                    echo "Vous êtes à présent connecté !";
-                } else {
-                    echo "Le mot de passe est incorrect.";
-                }
+            if (password_verify($password, $hashedPassword)) {
+                // Connexion réussie
+                $_SESSION['user_name'] = $username;
+                header('Location: welcome.php');
+                exit();
             } else {
-                echo "Le pseudo ou le mot de passe est incorrect, le compte n'a pas été trouvé.";
+                echo "Le mot de passe est incorrect.";
             }
-
-            $Requete->close();
-        }
+        } /*else {
+            echo "Le pseudo ou le mot de passe est incorrect, le compte n'a pas été trouvé.";
+        }*/
     }
 }
-
-// Connexion réussie
-$_SESSION['user_name'] = $UserName;
-header('Location: bienvenue.php');
-exit();
 ?>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="mt-4 mb-4">Connexion</h2>
+            <form method="post">
+                <div class="mb-3">
+                    <label for="user_name" class="form-label">Nom d'utilisateur :</label>
+                    <input type="text" name="user_name" id="user_name" class="form-control" required>
+                </div>
 
-    <form method="post" action="login.php">
-        <label>Nom d'utilisateur :</label>
-        <input type="text" name="user_name" required><br><br>
-        <label>Mot de passe :</label>
-        <input type="password" name="password" required><br><br>
-        <input type="submit" value="Se connecter">
-    </form>
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST')
-    ?>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Mot de passe :</label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                </div>
 
-<?php require_once 'layout/footer.php';
+                <div class="mb-3">
+                    <input type="submit" value="Se connecter" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php require_once '../layout/footer.php'; ?>
