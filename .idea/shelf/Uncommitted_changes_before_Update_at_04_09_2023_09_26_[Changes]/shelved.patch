@@ -1,0 +1,9 @@
+Index: README.md
+===================================================================
+diff --git a/README.md b/README.md
+deleted file mode 100644
+--- a/README.md	(revision aa7a7275535c8c132015f03ada779f2c72c7dceb)
++++ /dev/null	(revision aa7a7275535c8c132015f03ada779f2c72c7dceb)
+@@ -1,1 +0,0 @@
+-# Projet-Php-Steam
+\ No newline at end of file
