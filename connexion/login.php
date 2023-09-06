@@ -1,8 +1,7 @@
 <?php
-require_once('../nav-bar.php');
+require_once('../layout/header.php');
 require_once('../classes/ErrorCode.php');
 
-session_start();
 
 if (isset($_POST['user_name']) && isset($_POST['password'])) {
     $username = $_POST['user_name'];
@@ -34,7 +33,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
             if (password_verify($password, $hashedPassword)) {
                 // Connexion réussie
                 $_SESSION['user_name'] = $username;
-                header('Location: welcome.php');
+                header('Location: /welcome.php');
                 exit();
             } else {
                 echo "Le mot de passe est incorrect.";

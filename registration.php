@@ -1,7 +1,8 @@
 <?php
 
-require_once 'nav-bar.php';
+require_once 'layout/header.php';
 require_once 'classes/ErrorCode.php';
+
 
 $db = new PDO('mysql:host=host.docker.internal;dbname=php_project_steam', 'root', '');
 ini_set('display_errors', 1);

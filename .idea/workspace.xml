@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61f2718-219f-4c03-ad57-5fb46f7b1fb7" name="Changes" comment="finalisation de login.php et registration.php. La parti registration.php est valide.">
+      <change afterPath="$PROJECT_DIR$/user-session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_09_2023_09_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_09_2023_09_26__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/ErrorCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ErrorCode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connexion/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connexion/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nav-bar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,20 +33,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "Alexandre-Jln",
-      "author": "Alexandre-Jln"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Alexandre-Jln&quot;,
+      &quot;author&quot;: &quot;Alexandre-Jln&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Alexandre-Jln",
-    "author": "Alexandre-Jln"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alexandre-Jln&quot;,
+    &quot;author&quot;: &quot;Alexandre-Jln&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -47,34 +59,36 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php7.4.33\php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2UhMmXtZl86d9KmqJEwM3r3Evdx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/alex4/OneDrive/Bureau/projet_php_steam",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alex4/OneDrive/Bureau/projet_php_steam&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alex4\OneDrive\Bureau\projet_php_steam" />
       <recent name="C:\Users\alex4\OneDrive\Bureau\projet_php_steam\Projet-Php-Steam" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HB\Desktop\Projet_PHP_Steam\connexion" />
+      <recent name="C:\Users\HB\Desktop\Projet_PHP_Steam" />
       <recent name="C:\Users\alex4\OneDrive\Bureau\projet_php_steam" />
       <recent name="C:\Users\alex4\OneDrive\Bureau\projet_php_steam\Projet-Php-Steam" />
       <recent name="C:\Users\alex4\OneDrive\Bureau\projet_php_steam\connexion" />
@@ -105,6 +119,8 @@
       <workItem from="1693749624358" duration="1617000" />
       <workItem from="1693751322025" duration="9918000" />
       <workItem from="1693816435607" duration="33309000" />
+      <workItem from="1693925773775" duration="18478000" />
+      <workItem from="1694001034812" duration="2439000" />
     </task>
     <task id="LOCAL-00001" summary="avancer sur login et registration">
       <option name="closed" value="true" />
