@@ -23,7 +23,7 @@ session_start();
                 <ul class="navbar-nav margin-right:auto">
                     <?php
                     if (isset($_SESSION['user_name'])) {
-                        // L'utilisateur est connecté et affiche le bouton de déconnexion
+                        // L'utilisateur est connecté le bouton de déconnexion s'affiche
                         echo '<li class="nav-item">
            <a class="nav-link" href="../user-session.php">Informations du profil</a>
                           </li>
@@ -32,7 +32,7 @@ session_start();
                           </li>';
 
                     } else {
-                        // L'utilisateur n'est pas connecté, affichez les liens de connexion et inscription
+                        // L'utilisateur n'est pas connecté, affiche les liens de connexion et inscription
                         echo '<li class="nav-item">
             <a class="nav-link" href="../connexion/login.php">Connexion</a>
           </li>
