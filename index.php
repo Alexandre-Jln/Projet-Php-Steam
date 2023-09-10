@@ -22,7 +22,7 @@ if (isset($_SESSION['user_name'])) {
     // L'utilisateur n'est pas connecté, alors affiche le contenu principal
     echo '<div class="container mt-4 text-white">';
     echo '<h1>Bienvenue sur notre site</h1>';
-    echo '<p>Cliquez sur <a href="connexion/login.php">Connexion</a> ou <a href="registration.php">Inscription</a> pour continuer.</p>';
+    echo '<p>Cliquez sur <a href="connection/login.php">Connexion</a> ou <a href="registration.php">Inscription</a> pour continuer.</p>';
     echo '</div>';
 }
 require_once 'layout/footer.php';

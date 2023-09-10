@@ -1,6 +1,6 @@
 <?php
 require_once('../layout/header.php');
-require_once('../classes/ErrorCode.php');
+//require_once('../classes/Connection.php');
 
 
 if (isset($_POST['user_name']) && isset($_POST['password'])) {
@@ -11,7 +11,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
         $pdo = new PDO("mysql:host=host.docker.internal:3306;dbname=php_project_steam", "root", "");
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
-        echo "Erreur de connexion à la base de données : " . $e->getMessage();
+        echo "Erreur de connection à la base de données : " . $e->getMessage();
     }
 
 
@@ -19,7 +19,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
     $pdo = new PDO("mysql:host=host.docker.internal:3306;dbname=php_project_steam", "root", "");
 
     if (!$pdo) {
-        echo "Erreur de connexion à la base de données.";
+        echo "Erreur de connection à la base de données.";
     } else {
         // Utilisation de requêtes préparées
         $Requete = $pdo->prepare("SELECT * FROM users WHERE username=:username");
@@ -38,9 +38,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
             } else {
                 echo "Le mot de passe est incorrect.";
             }
-        } /*else {
-            echo "Le pseudo ou le mot de passe est incorrect, le compte n'a pas été trouvé.";
-        }*/
+        }
     }
 }
 ?>

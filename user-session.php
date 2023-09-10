@@ -9,7 +9,6 @@ require_once 'layout/header.php';
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Titre de la page</title>
-        <!-- Incluez ici les liens vers les fichiers CSS et JavaScript Bootstrap si nécessaire -->
     </head>
 
     <body>
@@ -17,13 +16,17 @@ require_once 'layout/header.php';
         <div class="container">
             <div class="row">
                 <h1 class="text-center align-items-center">Profil Steam</h1>
-                <div class="col-md-6">
-
+                <div class="col-md-6"> <br>
+                           <!-- <div class="col-md-3">
+                                <div class="profile-image-container">
+                                    <img src="assets/default_profile.jpg" alt="default_image" class="rounded-circle img-thumbnail" width="100" height="100">
+                                </div>
+                            </div> <br>
+                            <div class="col-md-9">
                 <form action="upload_image.php" method="POST" enctype="multipart/form-data">
-                    <label for="image">Image de profil :</label>
-                    <input type="file" name="image" id="image" accept="image/*">
-                    <!--<input type="submit" value="Télécharger">-->
-                </form>
+                    <input type="file" name="image" />
+                    <input type="submit" value="Envoyer" />
+                </form> <br><br>-->
 
                     <h4>Bans et restrictions</h4>
                     <table class="table table-bordered table-hover table-fixed table-responsive-flex">
