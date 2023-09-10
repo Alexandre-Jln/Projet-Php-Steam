@@ -1,5 +1,6 @@
 <?php
 require_once 'layout/header.php';
+require_once 'Classes/Upload_image.php';
 ?>
 
     <!DOCTYPE html>
@@ -17,16 +18,36 @@ require_once 'layout/header.php';
             <div class="row">
                 <h1 class="text-center align-items-center">Profil Steam</h1>
                 <div class="col-md-6"> <br>
-                           <!-- <div class="col-md-3">
-                                <div class="profile-image-container">
-                                    <img src="assets/default_profile.jpg" alt="default_image" class="rounded-circle img-thumbnail" width="100" height="100">
-                                </div>
-                            </div> <br>
-                            <div class="col-md-9">
-                <form action="upload_image.php" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="image" />
-                    <input type="submit" value="Envoyer" />
-                </form> <br><br>-->
+
+                    <div class="col-md-3">
+                        <div class="profile-image-container">
+                            <?php
+/*
+                            $bdd = new PDO('mysql:host=host.docker.internal;dbname=php_project_steam', 'root', '');
+
+                            $uploadImage = new Upload_image($bdd);
+
+                            if (isset($_FILES['avatar'])) {
+                                $result = $uploadImage->upload($_FILES['avatar'], $_SESSION['id']);
+                                if ($result === true) {
+                                    echo "L'image a été téléchargée avec succès.";
+                                } else {
+                                    echo "Erreur : " . $result;
+                                }
+                            } */
+                            ?>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-md-9">
+                        <form action="Classes/Upload_image.php" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="avatar" />
+                            <input type="submit" value="Envoyer" />
+                        </form>
+                        <br><br>
+                    </div>
+
 
                     <h4>Bans et restrictions</h4>
                     <table class="table table-bordered table-hover table-fixed table-responsive-flex">

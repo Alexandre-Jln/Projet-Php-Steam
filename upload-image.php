@@ -1,25 +1,39 @@
 <?php
-require_once 'user-session.php';
-require_once '../connection/login.php';
-?>
-<?php
-// Connexion à la base de données
+/*
+session_start();
 
-if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-    // Récupérer les données de l'image téléchargée
-    $imageData = file_get_contents($_FILES['image']['tmp_name']);
+if (isset($_FILES['avatar']) && !empty($_FILES['avatar']['name'])) {
+    $maxSize = 2097152;
+    $extensionsValides = array('jpg', 'jpeg', 'gif', 'png');
 
-    // Insérer les données de l'image dans la base de données
-    $query = "INSERT INTO users (avatar) VALUES (?, ?)";
-    $stmt = $pdo->prepare($query);
-    $name = "user_name";
-    $stmt->bind_value("ss", $name, $imageData);
+    if ($_FILES['avatar']['size'] <= $maxSize) {
+        $extensionUpload = strtolower(substr(strrchr($_FILES['avatar']['name'], '.'), 1));
 
-    if ($stmt->execute()) {
-        echo "L'image a été téléchargée et stockée avec succès.";
+        if (in_array($extensionUpload, $extensionsValides)) {
+            $chemin = "assets/default_image_profile.jpg" . $_SESSION['id'] . ".jpg";
+            $result = move_uploaded_file($_FILES['avatar']['tmp_name'], $chemin);
+
+            if ($result) {
+                // Met à jour le chemin de l'avatar dans la base de données
+                $updateavatar = $db->prepare('UPDATE users SET avatar = :avatar WHERE id = :id');
+                $updateavatar->execute(array(
+                    'avatar' => $_SESSION['id'] . '.jpg',
+                    'id' => $_SESSION['id']
+                ));
+            } else {
+                $msg = "Erreur durant l'importation de votre photo de profil";
+            }
+        } else {
+            $msg = "Votre photo de profil doit être au format jpg, jpeg, gif ou png";
+        }
     } else {
-        echo "Erreur lors de l'insertion de l'image dans la base de données.";
+        $msg = "Votre photo de profil ne doit pas dépasser 2Mo";
     }
+
+    // Redirige l'utilisateur vers une page après l'upload (par exemple, la page de profil)
+    header('Location: profil.php');
+    exit();
 }
 ?>
+
 

@@ -3,7 +3,7 @@ services:
   webserver:
     image: "ghcr.io/ld-web/php-apache:latest"
     ports:
-      - "82:80"
+      - "83:80"
     volumes:
       - ./:/var/www/html
     environment:

@@ -1,0 +1,10 @@
+{
+    "name": "ld-web/composer-intro",
+    "description": "composer intro for HB Students",
+    "authors": [
+        {
+            "name": "Alexandre"
+        }
+    ],
+    "require": {}
+}
